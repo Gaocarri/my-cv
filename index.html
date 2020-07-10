@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    /* .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    } */
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header>h3,
+      .jobs header>h4,
+      .jobs header>span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>高正</h1>
+      <img src="./avatar.jpg" alt="" width="80">
+      <p>
+        男 | 23岁 | 前端开发 | 南京
+      </p>
+      <p>
+        微信：RobinGzzz | 手机：<a href="tel:18751963920">18751963920</a> | 邮箱：<a
+          href="mailto:gaocarri@163.com">gaocarri@163.com</a>
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2015年9月</time>~<time>2019年6月</time></span>
+        &nbsp 东北林业大学 &nbsp 211工程 &nbsp 木材科学 &nbsp 本科</p>
+      <p>
+        <span><time>2019年9月</time>~<time>2021年6月</time></span>
+        &nbsp 河海大学 &nbsp 211工程 &nbsp 材料工程 &nbsp 硕士</p>
+    </section>
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>黑曜石记账</h3>
+            <span>
+              <a href="https://github.com/Gaocarri/obsidian-app" target="_blank">源码链接</a>
+              <a href="http://gaocarri.gitee.io/obsidian-website/#/money" target="_blank">项目预览</a>
+            </span>
+          </header>
+
+          <p>
+            使用技术：<strong>Vue</strong>，
+            <strong>VueCli</strong>，<strong>Vuex</strong>，<strong>VueRouter</strong>，<strong>TypeScript</strong>，<strong>SCSS</strong>，<strong>ECharts</strong>，
+            <strong>LocalStorage</strong>，<strong>dayjs</strong>，
+            <strong>better-scroll</strong>
+          </p>
+
+          <p>
+            一款基于 <strong>Vue</strong> / <strong>TypeScript</strong>完成的移动端网页记账SPA应用。
+          </p>
+
+          <p>
+            这是我从自己的需求出发，独立设计完成的记账应用，特点是快速记账，内置详细的消费统计功能，支持对记账记录进行修改，而且可以通过<strong>ECharts</strong>图表查看自己的消费习惯。
+          </p>
+          <p>
+            制作过程让我对<strong>TypeScript</strong>和<strong>Vue</strong>有了深刻的理解和应用，我将项目的学习和制作总结在了
+            <a target="_blank"
+              href="https://gaocarri.top/categories/%E9%BB%91%E6%9B%9C%E7%9F%B3%E8%AE%B0%E8%B4%A6%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/">个人博客</a>
+            中。
+          </p>
+        </li>
+
+        <li>
+          <header>
+            <h3>黑曜石图床</h3>
+            <span>
+              <a href="https://github.com/Gaocarri/obsidian-figure" target="_blank">源码链接</a>
+              <a href="https://gaocarri.gitee.io/obsidian-figure/#/" target="_blank">项目预览</a>
+            </span>
+          </header>
+
+          <p>
+            使用技术：<strong>React</strong>，
+            <strong>create-react-app</strong>，<strong>Mobx</strong>，
+            <strong>ReactRouter</strong>，<strong>React Hooks</strong>，
+            <strong>styled-components</strong>，<strong>Ant Design</strong>，<strong>LeanCloud</strong>
+          </p>
+
+          <p>
+            一款使用 <strong>React</strong> / <strong>LeanCloud</strong> / <strong>Ant Design</strong>完成的图床应用
+          </p>
+
+          <p>这是我使用<strong>React</strong>技术栈实现的一个在线图床，使用<strong>LeanCloud</strong>实现用户注册登录，图片上传和存储，UI组件引用了<strong>Ant
+              Design</strong>，核心功能包括：注册、登录、图片上传、图片定制、上传历史展示等。</p>
+
+          <p>
+            项目中大量使用了<strong>Hooks
+              API</strong>，使我对<strong>React
+              Hooks</strong>有了更深刻的认识。
+          </p>
+        </li>
+
+        <li>
+          <header>
+            <h3>黑曜石PPT</h3>
+            <span>
+              <a href="https://github.com/Gaocarri/obsidian-slide" target="_blank">源码链接</a>
+              <a href="http://gaocarri.gitee.io/obisidian-slide/demo.html#/" target="_blank">项目预览</a>
+            </span>
+          </header>
+
+          <p>
+            使用技术：<strong>原生JavaScript</strong>，<strong>reveal.js</strong>，<strong>LeanCloud</strong>
+          </p>
+
+          <p>
+            一款基于 <strong>reveal.js</strong> 修改完成的简洁高效的在线PPT制作平台。
+          </p>
+
+          <p>
+            reveal.js是一个通过书写html制作网页版PPT的框架，缺点是普通用户难以上手，为了使普通用户也可以快速制作，我对reveal.js进行了修改。使用黑曜石PPT可以使用户直接在输入框中输入Markdown快速完成ppt制作，支持内容编辑、图片上传、主题切换、特效切换、下载功能。
+          </p>
+
+          <p>
+            本项目的难点在于将用户输入的<strong>Markdown</strong>语法转换为reveal.js可以识别的内容以及使用<strong>LeanCloud</strong>增强图片上传功能，制作过程让我进一步加深了对原生JavaScript的理解
+          </p>
+        </li>
+
+        <li>
+          <header>
+            <h3>黑曜石多人共享博客</h3>
+            <span>
+              <a href="https://github.com/Gaocarri/obsidian-blog" target="_blank">源码链接</a>
+              <a href="http://gaocarri.gitee.io/obsidian-blog/#/index" target="_blank">项目预览</a>
+            </span>
+          </header>
+
+          <p>
+            使用技术：<strong>Vue</strong>，
+            <strong>VueCli</strong>，<strong>Vuex</strong>，<strong>VueRouter</strong>，
+            <strong>TypeScript</strong>，
+            <strong>SCSS</strong>，
+            <strong>axios</strong>，
+            <strong>Element UI</strong>
+          </p>
+
+          <p>
+            一款使用<strong>Vue</strong> / <strong>TypeScript</strong> / <strong>Element UI</strong>完成的多人共享博客
+          </p>
+
+          <p>
+            这是我使用<strong>Vue</strong>技术栈实现的多人共享博客，独立完成了博客的前端部分，基本功能包括：用户注册、登陆，首页(展示被用户分享到首页的博客列表)，博客详情，个人博客列表页面，博客创建、编辑、修改、删除、设置到首页。
+          </p>
+
+          <p>
+            本项目让我熟悉了<strong>Element UI</strong>的使用，同时制作涉及到了许多前端与后端的交互，加深了我对<strong>前后端分离</strong>的理解。
+          </p>
+        </li>
+
+        <li style="page-break-before: always; margin-top: 30px;">
+          <header>
+            <h3>小红购物街</h3>
+            <span>
+              <a href="https://github.com/Gaocarri/Vue-mall" target="_blank">源码链接</a>
+              <a href="http://gaocarri.gitee.io/mall-website/#/home" target="_blank">项目预览</a>
+            </span>
+          </header>
+
+          <p>
+            使用技术：<strong>Vue</strong>，
+            <strong>VueCli</strong>，<strong>Vuex</strong>，<strong>VueRouter</strong>，
+            <strong>better-scroll</strong>，
+            <strong>axios</strong>
+          </p>
+
+          <p>
+            一款使用<strong>Vue</strong>技术栈完成的仿蘑菇街移动端页面
+          </p>
+
+          <p>
+            使用<strong>axios</strong>发送网络请求，Vue框架完成了购物街的首页，商品详情页，分类页，购物车页以及个人页，可将商品添加至购物车。引入<strong>better-scroll</strong>使页面滑动更加顺滑。
+          </p>
+
+          <p>
+            本项目对蘑菇街做到了真实的还原，同时使用了大量<strong>better-scroll</strong>的API对页面进行了优化，如下滑加载，顶栏的固定等。
+          </p>
+        </li>
+      </ol>
+    </section>
+
+
+
+
+
+    <section class=" skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>熟悉页面制作技巧，能将设计稿<strong> 完美还原</strong> </li>
+          <li>熟悉 <strong>前后端分离</strong> 技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>熟练掌握 <strong>Vue</strong> 的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>熟悉 <strong>React</strong> 的使用，包括 create-react-app、ReactRouter、Mobx 等</li>
+          <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / 析构赋值</li>
+          <li>熟悉 <strong>Git</strong> / <strong>GitHub</strong> 部署流程</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+          <li>了解 <strong>Webpack</strong> 的配置和优化</li>
+          <li><strong>CET6</strong> 516分，能阅读英文文档，善用Google</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>某手游导航站点</h3>
+            <span>
+              <a href="https://github.com/Gaocarri/Arknights-nav" target="_blank">源码链接</a>
+              <a href="http://gaocarri.top/Arknights-nav/dist/index.html" target="_blank">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 JavaScript 时完成的一个导航站点，支持敲击键盘字母进入自定义的网站（根据网站首字母）</p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>会动的皮卡丘</h3>
+            <span>
+              <a href="https://github.com/Gaocarri/pikachu-1" target="_blank">源码链接</a>
+              <a href="http://gaocarri.top/pikachu-1/dist/index.html" target="_blank">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一只会动的皮卡丘</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://gaocarri.top/" target="_blank">我的博客</a>，记录学习笔记和技术文章，目前已有50余篇</li>
+        <li><a href="https://github.com/gaocarri" target="_blank">我的GitHub</a>，2020年已有200余次提交</li>
+      </ul>
+    </section>
+
+
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
